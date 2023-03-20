@@ -5,6 +5,7 @@ train.info() shows that we don't have any missing values and object features<br>
 From the histograms of every feature, we can see that most of them (except 6) have a **uniform distribution**. Plotting the scatterplot of feature 6 and the target, we can easily see **a strong quadratic association**.<br>
 As our data doesn't have any object features that need to be encoded or missing values and the features are not labeled, we cannot construct any new features not knowing their context, and we can begin modeling.<br></p>
 ### The Model
+
 **Linear Regression** gives us **RMSE 29.0154**<br>
 **Decision Tree gives** us **RMSE 0.0078** -> a huge improvement, so we have to try Random Forest, which is the ensembled model of decision trees<br>
 **Random Forest** with default parameters gives us **RMSE 0.0038**<br>
