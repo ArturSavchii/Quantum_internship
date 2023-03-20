@@ -9,7 +9,7 @@ As our data doesn't have any object features that need to be encoded or missing 
 **Decision Tree gives** us **RMSE 0.0078** -> a huge improvement, so we have to try Random Forest, which is the ensembled model of decision trees<br>
 **Random Forest** with default parameters gives us **RMSE 0.0038**<br>
 Let's use **Randomized Search** to tune our parameters for RF (decided to use Randomized Search instead of Grid Search due to its time efficiency). For randomized search we will use a **random sample** of 500 observation, as it will take to to much time<br>
-'''best_params_ = {'n_estimators': 800, 'min_samples_split': 2, 'min_samples_leaf': 1, 'max_features': 'auto', 'max_depth': 100, 'bootstrap': True}'''<br>
+```best_params_ = {'n_estimators': 800, 'min_samples_split': 2, 'min_samples_leaf': 1, 'max_features': 'auto', 'max_depth': 100, 'bootstrap': True}```<br>
 **RMSE = 0.00365** - Our predictions are very close - in 100% of observations, we correctly predict the integer part of a target.<br>
 I noticed that the decimal part equals to '7' feature.<br>
 ![image](https://user-images.githubusercontent.com/68689076/226411296-dd59d9f1-a018-49c5-abf2-fee4c80ba53e.png)
